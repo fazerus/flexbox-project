@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap&subset=latin-ext");
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +6,16 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+  background-color: #3da9db;
+  font-family: "pt sans", "roboto", arial, sans-serif;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 4rem;
 }
 /*# sourceMappingURL=main.css.map */
