@@ -85,14 +85,91 @@ html {
 }
 
 .menu {
-  background-color: rgb(155, 63, 117);
+  background-color: rgb(31, 29, 30);
   flex-basis: 100%;
+  font-family: $special-font;
+  height: 70px;
+  margin-top: 10px;
+  padding: 15px 20px 15px 80px;
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+  &__item {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 4rem;
+    margin: 0 20px;
+    &:hover {
+      border-bottom: 2px solid yellowgreen;
+    }
+    &:nth-last-child(1) {
+      margin-left: auto;
+      border: 2px solid #555;
+      &:hover {
+        border-color: yellow;
+      }
+      .menu__link {
+        padding: 0 20px;
+      }
+    }
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+  }
+}
+
+.article {
+  padding: 30px 50px;
+  color: #333;
+  text-align: center;
+  &__image {
+    width: 100%;
+  }
+  &__title {
+    font-family: $special-font;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 35px 0 15px;
+  }
+  &__btn {
+    border: 2px solid #333;
+    padding: 5px 10px;
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  &__introduction {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
 }
 
 .main-articles {
-  background-color: rgb(228, 111, 212);
+  background-color: $main-color;
   flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
   //   min-height: 50vh;
+  &__intro {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 60px 0 30px;
+    letter-spacing: 2px;
+  }
+  .article {
+    flex-basis: 50%;
+  }
 }
 
 .article-list {
